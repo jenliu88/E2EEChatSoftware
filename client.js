@@ -61,7 +61,9 @@ client.on('data', (data) => {
             else if (parsed.includes('Enter your password') || parsed.includes('Choose a password')) {
                 rl.question('', (pwd) => client.write(pwd.trim() + '\n'));
             }
-            else if (parsed.includes('Starting secure key exchange')) {
+            else if (parsed.includes('Starting secure key exchange') ||
+                    parsed.includes('Exchanging public keys')
+            ) {
                 pendingPrompt = 'server-key';
             }
             // db checking it's a base64-encoded server public key
