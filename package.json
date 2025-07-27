@@ -1,0 +1,26 @@
+{
+  "name": "e2eechatsoftware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "node client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenliu88/E2EEChatSoftware.git"
+  },
+  "keywords": [],
+  "author": "Jenny Liu",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jenliu88/E2EEChatSoftware/issues"
+  },
+  "homepage": "https://github.com/jenliu88/E2EEChatSoftware#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0"
+  }
+}
